@@ -1,0 +1,100 @@
+body{
+    font-family: Marcellus;
+    background-color: #faf8f2;
+    margin:50px 50px 0px 50px;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*body fills the full height of the viewpoint*/
+}
+
+header{
+    font-size: 3Rem;
+    margin-bottom: 20px;
+}
+
+.main{
+    flex:1;
+    display:flex; /*center the block elements on the page*/
+    justify-content: center;
+}
+
+p{
+    font-size: 0.9 Rem;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.second-title{
+    color:#0C2D57;
+}
+
+.block{
+    width:45%;
+    margin-bottom:50px;
+}
+
+#creative{
+    margin-right: 10%;
+}
+
+.block img{
+    height:150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+
+footer{
+    clear:both;
+    text-align: right;
+    color: #0C2D57;
+}
+
+@media(max-width:1200px){
+    .block img{
+        width:100%; /*align image and text*/
+        height: auto;
+        float: none;
+        object-fit: cover;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+@media(max-width:600px){
+
+    header{
+        font-size: 2Rem;
+        text-align: center;
+    }
+
+    
+    .main{
+        flex:1;
+        display: flex;
+        flex-direction: column; /*same as display: block*/
+        align-items: center;
+    }
+
+    .block{
+        width:80%;
+        margin-bottom:50px;
+        margin-right:0px;
+    }
+
+    .block img{
+        width:100%;
+        margin-bottom:10px;
+        object-fit: cover; /*ensure image cover its container while maintaing its ratio*/
+    }
+
+    #creative{
+        margin-right: 0px;
+    }
+
+}
